@@ -38,6 +38,8 @@ Open command promt and check **uv --version**
 
 **uv pip install -r pyproject.toml**:Install from a pyproject.toml file
 
+**uv run your_script_name.py** :Run the script using the uv run command
+
 **uv sync**: Updates the virtual environment to match the uv.lock file.
 
 **uv pip compile requirements.txt**: Compiles requirements in project to requirements.txt.
