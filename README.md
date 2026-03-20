@@ -23,14 +23,23 @@ It will help to check how to install required softwares,library and commands for
 ## 4-uv Commands
 #### A.Core Project & Dependency Management 
 **uv init**: Creates a new Python project, including pyproject.toml and a .venv
+
 **uv add <package>**: Adds dependencies and updates pyproject.toml and uv.lock.
+
 **uv remove <package>**: Removes dependencies.
+
 **uv sync**: Updates the virtual environment to match the uv.lock file.
+
 **uv pip compile**: Compiles requirements in project to requirements.txt.
-**uv pip sync**: Syncs virtual environment with a requirements.txt. 
+
+**uv pip sync**: Syncs virtual environment with a requirements.txt.
+
 **uv lock**: Generates or updates the lockfile without installing packages.
+
 **uv tree**: Visualizes the project dependency tree. 
+
 **uv export**: Exports the lockfile to an alternative format (e.g., requirements.txt). 
+
 #### B.Manage virtual environment
 **uv venv** : Creating virtual environment.
 **uv venv my-name** : A specific name or path can be specified, e.g., to create a virtual environment at my-name:
