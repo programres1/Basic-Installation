@@ -28,6 +28,12 @@ Open command promt and check **uv --version**
 
 **uv add < package-name >**: Adds dependencies and updates pyproject.toml and uv.lock.
 
+**uv pip install flask ruff** :To install multiple packages, e.g., Flask and Ruff
+
+**uv pip install 'ruff>=0.2.0'**:To install a package with a constraint, e.g., Ruff v0.2.0 or newer
+
+**uv pip install 'ruff==0.3.0'**:To install a package at a specific version, e.g., Ruff v0.3.0
+
 **uv remove < package-name >**: Removes dependencies.
 
 **uv pip install -r pyproject.toml**:Install from a pyproject.toml file
