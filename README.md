@@ -30,6 +30,8 @@ Open command promt and check **uv --version**
 
 **uv remove < package-name >**: Removes dependencies.
 
+**uv pip install -r pyproject.toml**:Install from a pyproject.toml file
+
 **uv sync**: Updates the virtual environment to match the uv.lock file.
 
 **uv pip compile requirements.txt**: Compiles requirements in project to requirements.txt.
