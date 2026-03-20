@@ -30,7 +30,7 @@ Open command promt and check **uv --version**
 
 **uv sync**: Updates the virtual environment to match the uv.lock file.
 
-**uv pip compile**: Compiles requirements in project to requirements.txt.
+**uv pip compile requirement.txt**: Compiles requirements in project to requirements.txt.
 
 **uv pip sync**: Syncs virtual environment with a requirements.txt.
 
