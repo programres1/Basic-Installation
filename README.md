@@ -13,3 +13,9 @@ It will help to check how to install required softwares,library and commands for
 ###### Open git bash and check python --version
 #### B.Download exe file and install python for windows and then 
 ###### Open command promt and check python --version
+## 2-Install uv
+#### A.Check uv installation on Windows:
+###### Open git bash and check uv --version
+#### B.Install uv (pip install uv) for windows and then 
+###### Open command promt and check uv --version
+
