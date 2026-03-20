@@ -24,15 +24,17 @@ Open command promt and check **uv --version**
 #### A.Core Project & Dependency Management 
 **uv init**: Creates a new Python project, including pyproject.toml and a .venv
 
+**uv add -r requirements.txt**:Install all dependencies mentioned in requirements.txt. Also adds the dependencies to pyproject.toml and creates a uv.lock file.
+
 **uv add <package>**: Adds dependencies and updates pyproject.toml and uv.lock.
 
 **uv remove <package>**: Removes dependencies.
 
 **uv sync**: Updates the virtual environment to match the uv.lock file.
 
-**uv pip compile requirement.txt**: Compiles requirements in project to requirements.txt.
+**uv pip compile requirements.txt**: Compiles requirements in project to requirements.txt.
 
-**uv pip sync requirement.txt**: Syncs virtual environment with a requirements.txt.
+**uv pip sync requirements.txt**: Syncs virtual environment with a requirements.txt.
 
 **uv lock**: Generates or updates the lockfile without installing packages.
 
