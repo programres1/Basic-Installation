@@ -26,9 +26,9 @@ Open command promt and check **uv --version**
 
 **uv add -r requirements.txt**:Install all dependencies mentioned in requirements.txt. Also adds the dependencies to pyproject.toml and creates a uv.lock file.
 
-**uv add <package>**: Adds dependencies and updates pyproject.toml and uv.lock.
+**uv add < package-name >**: Adds dependencies and updates pyproject.toml and uv.lock.
 
-**uv remove <package>**: Removes dependencies.
+**uv remove < package-name >**: Removes dependencies.
 
 **uv sync**: Updates the virtual environment to match the uv.lock file.
 
