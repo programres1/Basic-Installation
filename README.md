@@ -22,7 +22,7 @@ Open command promt and check **uv --version**
 **pip install --upgrade uv**
 ## 4-uv Commands
 #### A.Core Project & Dependency Management 
-<span style="color: red;">**uv init**</span>: Creates a new Python project, including pyproject.toml and a .venv
+**uv init**: Creates a new Python project, including pyproject.toml and a .venv
 
 **uv add -r requirements.txt**:Install all dependencies mentioned in requirements.txt. Also adds the dependencies to pyproject.toml and creates a uv.lock file.
 
