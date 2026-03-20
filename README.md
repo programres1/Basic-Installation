@@ -22,7 +22,7 @@ Open command promt and check **uv --version**
 **pip install --upgrade uv**
 ## 4-uv Commands
 #### A.Core Project & Dependency Management 
-**uv init**: Creates a new Python project, including pyproject.toml and a .venv
+<span style="color: red;">**uv init**</span>: Creates a new Python project, including pyproject.toml and a .venv
 
 **uv add -r requirements.txt**:Install all dependencies mentioned in requirements.txt. Also adds the dependencies to pyproject.toml and creates a uv.lock file.
 
@@ -45,13 +45,13 @@ Open command promt and check **uv --version**
 #### B.Manage virtual environment
 **uv venv** : Creating virtual environment.
 
-**uv venv my-name** : A specific name or path can be specified, e.g., to create a virtual environment at my-name
-
-**uv venv --python 3.11**: A Python version can be requested, e.g., to create a virtual environment with Python 3.11.this requires the requested Python version to be available on the system. However, if unavailable, uv will download Python for you.
-
 **source .venv/Scripts/activate**: For activating virtual environment.
 
 **deactivate** :To exit a virtual environment.
+
+**uv venv my-name** : A specific name or path can be specified, e.g., to create a virtual environment at my-name
+
+**uv venv --python 3.11**: A Python version can be requested, e.g., to create a virtual environment with Python 3.11.this requires the requested Python version to be available on the system. However, if unavailable, uv will download Python for you.
 
 **uv python install** :Install the latest stable version
 
