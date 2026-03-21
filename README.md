@@ -98,7 +98,7 @@ Open command promt and check **uv --version**
 
 **git restore .**: To restore all files from staging area.
 
-**git rm -f --cached < filename >**for removing a file from the staging area.
+**git rm -f --cached < filename >** for removing a file from the staging area.
 
 **git rm -f -r --cached .** for removing all files from the staging area.
 
