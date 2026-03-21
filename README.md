@@ -73,3 +73,10 @@ Open command promt and check **uv --version**
 
 ## 4-Git
 #### A.Commands
+
+**git config --global init.Defaultbranch <branch_name>**:It  is used to set the default branch name for all future, newly initialized Git repositories on your system. The placeholder <branch_name> should be replaced with your desired name, such as main or primary.
+
+**git branch -m master main**:To rename the local branch.
+
+**git push -u origin main**:Push the renamed local branch to the remote repository (e.g., on GitHub or GitLab) and reset the upstream branch.
+
