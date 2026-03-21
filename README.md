@@ -405,3 +405,39 @@ For synnc with local repo switch to main branch in local repo and then use git p
 7-Pull the merged changes into your local main branch
 
 8-Repeat from step 2
+
+#### G.Merge Conflict
+A merge conflict occurs when Git cannot automatically merge changes because the same part of a file was modified differently in two branches. It must be resolved manually by editing the file and committing the result.
+
+👉 A merge conflict happens when Git cannot automatically combine changes from two sources.
+
+💡 In simple words:
+
+“Git doesn’t know which change is correct”
+
+🚨 When does it happen?
+🔥 Common scenario:
+You and your teammate edit the same file
+Even worse → same line
+
+
+----
+1- branch-b commit is approved
+2- boss  will swich to main branch
+3-boss will use git pull to sync the code.
+4-boss  will switch to main branch-a
+5-Run git merge main->main will merge into branch-a, although initial purpose/objective of branch-a user was to merge his branch to main branch.
+6- Atually it will show error but both branch-a and branch-b code will come in brach-a.
+```
+<<<<<<< HEAD(Current Change)
+Manoj
+=======
+anu
+>>>>>>> main(Incoming change)
+```
+7- Now take help of Merge Editor in vs code and compare manullay and have the necessary changes from both the files and discard which is not required.
+8-Use git commit -am "resolved conflict" and git puch from branch-a
+9- Now approve pull request in github for branch-a
+10- now everybody can switch to main branch and use git pull to sysnc code from git hub
+
+------
