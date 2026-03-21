@@ -189,6 +189,8 @@ git push -u origin  new-branch
 ```
 git switch --track origin/new-branch
 ```
+![Img5](https://github.com/programres1/Basic-Installation/blob/main/5.png)
+
 ##### 🧠 4. See all branches
 ```
 git branch        # local
