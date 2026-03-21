@@ -222,6 +222,8 @@ git branch -D feature/login
 
 ##### 🚀 What is git pull?
 
+👉git pull fetches changes from a remote repository and merges them into the current branch. Internally, it is a combination of git fetch and git merge.
+
 👉 It downloads changes from remote (GitHub) and updates your local branch. Simple Meaning is it Bring latest code from remote repo into my current branch.🔍 What actually happens internally
 
 git pull =git fetch + git merge
