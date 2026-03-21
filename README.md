@@ -372,3 +372,18 @@ Command	What it does
 git stash pop	apply + delete stash
 git stash apply	apply but keep stash
 git stash drop	delete without applying
+
+
+
+----
+when work on my branch is finshed and tested i want to merge this work into main branch. Then i will open up a pull reuest. A pull request  will let me share with my teammates for review and feedback.Once approved and merged my changes will become part of main branch.I will keep code base stable and oragnized.
+
+Use compare and pull request or pull request tab and new pull request and fill the form and create pull reuest. Boss will review and no conflict is there and every thing seems good, he will confirm the merge.Enter comments if required Press merge pull request button.Again press confirm merge button. If you want delete that branch.
+
+For synnc with local repo switch to main branch in local repo and then use git pull command to sysnc.
+
+---
+
+![Img4](https://github.com/programres1/Basic-Installation/blob/main/4.png)
+
+![Img6](https://github.com/programres1/Basic-Installation/blob/main/6.png)
