@@ -218,3 +218,68 @@ git branch -D feature/login
 ```
 git branch -D feature/login
 
+#### E.Pull
+
+##### 🚀 What is git pull?
+
+👉 It downloads changes from remote (GitHub) and updates your local branch. Simple Meaning is it Bring latest code from remote repo into my current branch.🔍 What actually happens internally
+
+git pull =git fetch + git merge
+🔹 Step 1: git fetch
+
+👉 Downloads latest changes from remote
+👉 Does NOT modify your code
+
+🔹 Step 2: git merge
+
+👉 Merges those changes into your current branch
+
+📦 Example Flow
+
+```
+git pull origin main
+
+git pull origin atext-enhanced
+```
+👉 Means:
+
+Get latest code from origin/main
+Merge into your current branch
+🔄 Visual Understanding
+GitHub (origin/main)
+        ↓ fetch
+Local (origin/main)
+        ↓ merge
+Local (main)
+✅ Common Usage
+🔹 Pull latest code
+```
+git pull
+```
+👉 Works only if upstream is set (-u used earlier)
+
+🔹 Pull from specific branch
+git pull origin main
+⚠️ Important Scenarios
+🔴 1. Merge conflict
+
+👉 Happens when:
+
+You and someone else changed same code
+
+👉 Git will ask you to resolve manually
+
+🟡 2. Local changes present
+
+👉 You may get:
+
+Please commit or stash your changes
+Fix:
+```
+git stash
+git pull
+git stash pop
+```
+
+ 
+
