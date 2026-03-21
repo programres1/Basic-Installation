@@ -118,7 +118,7 @@ Open command promt and check **uv --version**
 #### C.Github
 It is a cloud platform(Other plateforms are gitlab,bitbucket ) to store git repository online and collaborate with others.
 
-**git remote add origin <url>** :links a local repository to a remote repository. 'origin' is the default name for the remote, and the URL points to the GitHub repository.It only connects repo, does NOT push code
+**git remote add origin < url >** :links a local repository to a remote repository. 'origin' is the default name for the remote, and the URL points to the GitHub repository.It only connects repo, does NOT push code
 
 **git push -u origin main**:Push the renamed local branch to the remote repository (e.g., on GitHub or GitLab). Sends your local commits → remote repo .(-u) Stands for --set-upstream.It links your local branch with remote branch.After running once this command subsequently we can use **git push** only.
 
