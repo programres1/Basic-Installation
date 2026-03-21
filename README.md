@@ -139,7 +139,7 @@ git status
 👉links a local repository to a remote repository. 'origin' is the default name for the remote, and the URL points to the GitHub repository.It only connects repo, does NOT push code
 
 ```
-git remote add origin < url >
+git remote add origin <git-url>
 ```
 
 👉Push the renamed local branch to the remote repository (e.g., on GitHub or GitLab). Sends your local commits → remote repo .(-u) Stands for --set-upstream.It links your local branch with remote branch.After running once this command subsequently we can use **git push** only.
