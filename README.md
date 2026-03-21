@@ -94,9 +94,13 @@ Open command promt and check **uv --version**
 
 **git add .**:Stage every file
 
-**git restore --staged < filename >**:for removing a file from the staging area while keeping your local changes intact.
+**git restore < filename >**:To restore file from staging area.
 
-**git restore --staged**: Unstages everything in your current directory at once.
+**git restore .**: To restore all files from staging area.
+
+**git rm -f --cached < filename >**for removing a file from the staging area.
+
+**git rm -f -r --cached .** for removing all files from the staging area.
 
 **git commit -m "your message"**:The git commit command acts as a save point for your project, recording a snapshot of your staged changes into the local repository's history. Unlike many other version control systems, a Git commit stays on your local machine and is not shared with others until you explicitly "push" it. 
 
