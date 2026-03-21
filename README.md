@@ -387,3 +387,14 @@ For synnc with local repo switch to main branch in local repo and then use git p
 ![Img4](https://github.com/programres1/Basic-Installation/blob/main/4.png)
 
 ![Img6](https://github.com/programres1/Basic-Installation/blob/main/6.png)
+
+**Typical WorkFlow**
+
+1-Clone the repository
+2-Create a new branch from the main or another branch
+3-Make your changes
+4-Push the branch to the remote repo
+5-Open a Pull Request
+6-Merge the changes
+7-Pull the merged changes into your local main branch
+8-Repeat from step 2
