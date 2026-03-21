@@ -79,8 +79,12 @@ Open command promt and check **uv --version**
 **git config --global user.name <username>**:Set an usename address in Git
 
 **git config --global user.email <email>**:Set an email address in Git
+
 **git config --list**:Check git configuration
 
+*main* is default branch name of repo created by git
+
+#### B.Other git commands
 
 **git branch -m master main**:To rename the local branch.
 
