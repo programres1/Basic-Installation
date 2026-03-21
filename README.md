@@ -82,9 +82,23 @@ Open command promt and check **uv --version**
 
 **git config --list**:Check git configuration
 
-*main* is default branch name of repo created by git
+*main* is default branch name of repo created by git. With *git init* this branch is automatically created.*Branch* is parallel version of our project
 
 #### B.Other git commands
+
+**git init** :It transforms a standard directory into a Git repository, allowing you to track changes, create versions, and collaborate with others. 
+
+**git status**: The git status command is used to display the current state of the working directory 
+
+**git add <filename>**:The git add command is used to move changes from your working directory to the staging area .Stage a single file by name.
+
+**git add .**:Stage every file
+
+**git restore --staged <file>**:for removing a file from the staging area while keeping your local changes intact.
+
+**git restore --staged**: Unstages everything in your current directory at once.
+
+**git commit -m "your message"**:The git commit command acts as a save point for your project, recording a snapshot of your staged changes into the local repository's history. Unlike many other version control systems, a Git commit stays on your local machine and is not shared with others until you explicitly "push" it. 
 
 **git branch -m master main**:To rename the local branch.
 
