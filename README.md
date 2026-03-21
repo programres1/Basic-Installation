@@ -106,7 +106,7 @@ Open command promt and check **uv --version**
 
 **git log**:To view the commit history of a repository. 
 
-**git restore --source=<commit-hash> .** :You restored your working directory files to that old commit.**But your HEAD (current branch) is still at the latest commit**.So nothing is “lost” — your latest commit is still there.
+**git restore --source=< commit-hash > .** :You restored your working directory files to that old commit.**But your HEAD (current branch) is still at the latest commit**.So nothing is “lost” — your latest commit is still there.
 
 **git restore .**:This restores all files back to the latest commit (HEAD)
 
