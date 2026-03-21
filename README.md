@@ -114,3 +114,9 @@ Open command promt and check **uv --version**
 
 **git push -u origin main**:Push the renamed local branch to the remote repository (e.g., on GitHub or GitLab) and reset the upstream branch.
 
+
+**git checkout -f main**:
+
+#### C.Github
+It is a cloud platform to store git repository online and collaborate with others
+
