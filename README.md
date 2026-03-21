@@ -73,22 +73,40 @@ Open command promt and check **uv --version**
 
 ## 4-Git
 #### A.Set up git(Open Git Bash)
+👉It  is used to set the default branch name for all future, newly initialized Git repositories on your system. The placeholder <branch_name> should be replaced with your desired name, such as main or primary.
 
-**git config --global init.Defaultbranch <branch_name>**:It  is used to set the default branch name for all future, newly initialized Git repositories on your system. The placeholder <branch_name> should be replaced with your desired name, such as main or primary.
+```
+git config --global init.Defaultbranch <branch_name>
+```
+👉Set an usename address in Git
+```
+git config --global user.name <username>
+```
 
-**git config --global user.name <username>**:Set an usename address in Git
+👉Set an email address in Git
+```
+git config --global user.email <email>
+```
 
-**git config --global user.email <email>**:Set an email address in Git
+👉Check git configuration
+```
+git config --list
+```
 
-**git config --list**:Check git configuration
-
-*main* is default branch name of repo created by git. With *git init* this branch is automatically created.*Branch* is parallel version of our project
+👉*main* is default branch name of repo created by git. With *git init* this branch is automatically created.*Branch* is parallel version of our project
 
 #### B.Other git commands
+👉It transforms a standard directory into a Git repository, allowing you to track changes, create versions, and collaborate with others. 
 
-**git init** :It transforms a standard directory into a Git repository, allowing you to track changes, create versions, and collaborate with others. 
+```
+git init
+```
+👉The git status command is used to display the current state of the working directory 
 
-**git status**: The git status command is used to display the current state of the working directory 
+```
+git status
+```
+
 
 **git add < filename >**:The git add command is used to move changes from your working directory to the staging area .Stage a single file by name.
 
@@ -125,4 +143,61 @@ It is a cloud platform(Other plateforms are gitlab,bitbucket ) to store git repo
 **git remote -v**:Check if local repository pushed successfully
 
 
+#### D.Branch
+
+![Img4](https://github.com/programres1/Basic-Installation/blob/main/4.png)
+##### 🚀 1. Create + Switch (Modern Way ✅)
+###### 🔹 Create and switch in one command
+```
+git switch -c feature/login
+```
+👉 Creates branch feature/login and switches to it
+
+##### 🔁 2. Switch between branches
+🔹 Go back to main
+```
+git switch main
+```
+🔹 Switch again to feature
+```
+git switch feature/login
+```
+
+##### 🔥 3. Advanced Branching (Pro Level)
+🔹 Create branch from specific commit
+```
+git switch -c feature/login <commit-hash>
+```
+🔹 Create branch from another branch
+```
+git switch -c feature/login develop
+```
+🔹 Push new branch to remote
+```
+git push -u origin feature/login
+```
+🔹 Track remote branch
+```
+git switch --track origin/feature/login
+```
+##### 🧠 4. See all branches
+```
+git branch        # local
+git branch -r     # remote
+git branch -a     # all
+```
+##### 🔥 5. Rename branch (advanced)
+```
+git branch -m old-name new-name
+```
+##### ⚠️ 6. Delete branch (careful)
+Local:
+```
+git branch -d feature/login
+```
+Force delete:
+```
+git branch -D feature/login
+```
+git branch -D feature/login
 
