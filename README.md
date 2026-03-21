@@ -104,6 +104,10 @@ Open command promt and check **uv --version**
 
 **git commit -m "your message"**:The git commit command acts as a save point for your project, recording a snapshot of your staged changes into the local repository's history. Unlike many other version control systems, a Git commit stays on your local machine and is not shared with others until you explicitly "push" it. 
 
+**git log**:To view the commit history of a repository. 
+
+**git checkout <commit-hash>** :To restrore to a particular commit
+
 **git branch -m master main**:To rename the local branch.
 
 **git push -u origin main**:Push the renamed local branch to the remote repository (e.g., on GitHub or GitLab) and reset the upstream branch.
