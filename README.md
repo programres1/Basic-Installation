@@ -90,11 +90,11 @@ Open command promt and check **uv --version**
 
 **git status**: The git status command is used to display the current state of the working directory 
 
-**git add <filename>**:The git add command is used to move changes from your working directory to the staging area .Stage a single file by name.
+**git add < filename >**:The git add command is used to move changes from your working directory to the staging area .Stage a single file by name.
 
 **git add .**:Stage every file
 
-**git restore --staged <file>**:for removing a file from the staging area while keeping your local changes intact.
+**git restore --staged < filename >**:for removing a file from the staging area while keeping your local changes intact.
 
 **git restore --staged**: Unstages everything in your current directory at once.
 
