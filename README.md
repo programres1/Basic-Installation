@@ -283,5 +283,92 @@ git pull
 git stash pop
 ```
 
- 
+#### F.Stash 
+👉 git stash temporarily saves uncommitted changes, git pull fetches and merges the latest code, and git stash pop reapplies the saved changes on top of the updated code.
 
+🔹 1. git stash
+git stash
+
+👉 Temporarily saves your uncommitted changes
+👉 Cleans your working directory
+
+🧠 Think:
+
+"Hide my changes safely for now"
+
+🔹 2. git pull
+git pull
+
+👉 Now your working directory is clean
+👉 Git can safely download + merge latest code
+
+🔹 3. git stash pop
+git stash pop
+
+👉 Brings back your saved changes
+👉 Applies them on top of latest code
+
+🔄 Visual Flow
+Before:
+Your changes + Old code
+
+git stash
+↓
+Clean state
+
+git pull
+↓
+Latest code
+
+git stash pop
+↓
+Your changes + Latest code
+⚠️ Important Things
+🔴 1. Conflict can happen
+
+👉 If same lines changed:
+
+You’ll get merge conflict after:
+
+git stash pop
+🟡 2. Difference: pop vs apply
+Command	Behavior
+git stash pop	apply + delete stash
+git stash apply	apply but keep stash
+🔹 Check stash list
+git stash list
+🔹 Apply specific stash
+git stash apply stash@{0}
+
+
+----
+
+🧠 First: Check your stash list
+git stash list
+
+👉 Example:
+
+stash@{0}: WIP on main
+stash@{1}: WIP on feature
+🗑️ 1. Delete a specific stash
+git stash drop stash@{0}
+
+👉 Deletes only that one stash
+
+🧹 2. Delete latest stash (most common)
+git stash drop
+
+👉 Same as:
+
+git stash drop stash@{0}
+💥 3. Delete ALL stashes
+git stash clear
+
+⚠️ Warning:
+👉 Removes everything permanently
+
+🔥 Important Difference
+Command	What it does
+git stash pop	apply + delete stash
+git stash apply	apply but keep stash
+git stash drop	delete without applying
