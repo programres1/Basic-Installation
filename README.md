@@ -13,15 +13,15 @@ When terminal is opened, in top right corner user should click on down-arrow but
 Open git bash and check **python --version**
 #### B.Download exe file and install python for windows and then 
 Open command promt and check **python --version**
-## 3-Install uv
+## 3-Install uv and commands
 #### A.Check uv installation on Windows:
 Open git bash and check **uv --version**
 #### B.Install uv (pip install uv) for windows and then 
 Open command promt and check **uv --version**
 #### C. Upgrade uv
 **pip install --upgrade uv**
-## 4-uv Commands
-#### A.Core Project & Dependency Management 
+
+#### D.Core Project & Dependency Management 
 **uv init**: Creates a new Python project, including pyproject.toml and a .venv
 
 **uv add -r requirements.txt**:Install all dependencies mentioned in requirements.txt. Also adds the dependencies to pyproject.toml and creates a uv.lock file.
@@ -52,7 +52,7 @@ Open command promt and check **uv --version**
 
 **uv export**: Exports the lockfile to an alternative format (e.g., requirements.txt). 
 
-#### B.Manage virtual environment
+#### E.Manage virtual environment
 **uv venv** : Creating virtual environment.
 
 **source .venv/Scripts/activate**: For activating virtual environment.
