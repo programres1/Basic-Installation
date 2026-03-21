@@ -131,7 +131,7 @@ git status
 **git branch -m master main**:To rename the local branch, if not done earlier in git bash globally.
 
 
-**git checkout -f main**:
+**git checkout -f main**:  ??
 
 #### C.Github
 👉It is a cloud platform(Other plateforms are gitlab,bitbucket ) to store git repository online and collaborate with others.
@@ -173,22 +173,28 @@ git switch  new-branch
 ```
 
 ##### 🔥 3. Advanced Branching (Pro Level)
-🔹 Create branch from specific commit
+###### 🔹 Create branch from specific commit
 ```
 git switch -c  new-branch <commit-hash>
 ```
-🔹 Create branch from another branch
+###### 🔹 Create branch from another branch
 ```
 git switch -c  new-branch source-branch
 ```
-🔹 Push new branch to remote
+###### 🔹 Push new branch to remote
 ```
 git push -u origin  new-branch
 ```
-🔹 Track remote branch
+###### 🔹 Track remote branch
+git switch --track is used to create a new branch tracking a remote branch. If the branch already exists , we simply switch to it or set upstream manually.--track is used only when branch does NOT exist locally
 ```
 git switch --track origin/new-branch
 ```
+###### 🔹Set upstream manually (if not tracking)
+```Bash
+git branch --set-upstream-to=origin/atext-enhanced
+```
+
 ![Img5](https://github.com/programres1/Basic-Installation/blob/main/5.png)
 
 ##### 🧠 4. See all branches
