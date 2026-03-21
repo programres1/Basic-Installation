@@ -149,7 +149,7 @@ It is a cloud platform(Other plateforms are gitlab,bitbucket ) to store git repo
 ##### 🚀 1. Create + Switch (Modern Way ✅)
 ###### 🔹 Create and switch in one command
 ```
-git switch -c feature/login
+git switch -c new-branch
 ```
 👉 Creates branch feature/login and switches to it
 
@@ -160,25 +160,25 @@ git switch main
 ```
 🔹 Switch again to feature
 ```
-git switch feature/login
+git switch  new-branch
 ```
 
 ##### 🔥 3. Advanced Branching (Pro Level)
 🔹 Create branch from specific commit
 ```
-git switch -c feature/login <commit-hash>
+git switch -c  new-branch <commit-hash>
 ```
 🔹 Create branch from another branch
 ```
-git switch -c feature/login develop
+git switch -c  new-branch source-branch
 ```
 🔹 Push new branch to remote
 ```
-git push -u origin feature/login
+git push -u origin  new-branch
 ```
 🔹 Track remote branch
 ```
-git switch --track origin/feature/login
+git switch --track origin/new-branch
 ```
 ##### 🧠 4. See all branches
 ```
@@ -193,7 +193,7 @@ git branch -m old-name new-name
 ##### ⚠️ 6. Delete branch (careful)
 Local:
 ```
-git branch -d feature/login
+git branch -d  new-branch
 ```
 Force delete:
 ```
