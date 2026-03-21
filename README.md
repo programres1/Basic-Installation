@@ -110,13 +110,19 @@ Open command promt and check **uv --version**
 
 **git restore .**:This restores all files back to the latest commit (HEAD)
 
-**git branch -m master main**:To rename the local branch.
-
-**git push -u origin main**:Push the renamed local branch to the remote repository (e.g., on GitHub or GitLab) and reset the upstream branch.
+**git branch -m master main**:To rename the local branch, if not done earlier in git bash globally.
 
 
 **git checkout -f main**:
 
 #### C.Github
 It is a cloud platform(Other plateforms are gitlab,bitbucket ) to store git repository online and collaborate with others
+
+**git remote add origin <url>** :links a local repository to a remote repository. 'origin' is the default name for the remote, and the URL points to the GitHub repository.It only connects repo, does NOT push code
+
+**git push -u origin main**:Push the renamed local branch to the remote repository (e.g., on GitHub or GitLab).
+
+**git remote -v**:Check if local repository pushed successfully
+
+
 
