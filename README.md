@@ -72,9 +72,15 @@ Open command promt and check **uv --version**
 **uv python uninstall <version_identifier>** :Uninstall the desired version
 
 ## 4-Git
-#### A.Commands
+#### A.Set up git(Open Git Bash)
 
 **git config --global init.Defaultbranch <branch_name>**:It  is used to set the default branch name for all future, newly initialized Git repositories on your system. The placeholder <branch_name> should be replaced with your desired name, such as main or primary.
+
+**git config --global user.name <username>**:Set an usename address in Git
+
+**git config --global user.email <email>**:Set an email address in Git
+**git config --list**:Check git configuration
+
 
 **git branch -m master main**:To rename the local branch.
 
